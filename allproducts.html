@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aroma Sense</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient d-flex flex-wrap sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand brandText" href="index.html">AromasenSe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Men
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="men.html">New Releases</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="men.html">Most Popular</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="men.html">Vintage Perfumes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Women
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="women.html">New Releases</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="women.html">Most Popular</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="women.html"
+                    >Vintage Perfumes</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#brand_section">Brands</a>
+            </li>
+
+            <div class="mx-2">
+              <button
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Login
+              </button>
+              <button
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#signUpModal"
+              >
+                SignUp
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">
+              Log into AromasenSe
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Click to confirm</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="signUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signUpModalLabel">
+              Get an AromasenSe account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label"
+                >Email</label
+              >
+              <div class="col-sm-10">
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-3 col-form-label"
+                >Password</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-4 col-form-label"
+                >Confirm Password!</label
+              >
+              <div class="col-sm-8">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Create Account
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="featurette-heading fw-normal lh-1 widthModifier2 my-5">
+        Showing results for
+      </h1>
+      <div class="widthModifier2">
+        <input
+          class="form-check-input mx-3"
+          type="radio"
+          name="flexRadioDefault"
+          id="Radio1"
+          onclick="show1();"
+        />Both Men and Women
+        <input
+          class="form-check-input mx-3"
+          type="radio"
+          name="flexRadioDefault"
+          id="Radio2"
+          onclick="show2();"
+        />For Men
+        <input
+          class="form-check-input mx-3"
+          type="radio"
+          name="flexRadioDefault"
+          id="Radio3"
+          onclick="show3();"
+        />For Women
+      </div>
+    </div>
+    <!-- Men perfume lists -->
+    <h2 class="featurette-heading fw-normal lh-1 widthModifier2" id="forMen1">
+      <br />
+      <br />
+      Men's Perfume Catagory
+    </h2>
+    <div class="album py-5 bg-light" id="forMen2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/perfume1.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText">Suvage Parfum for Men 75ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹11,499.00</del></span>
+                    <span class="pricePerfume">₹10,499.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/men1.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >K by Dolce & Gabbana EDT for Men 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹4,725.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/perfume3.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Acqua Di Gio Eau de Toilette for Men 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹5,099.00</del></span>
+                    <span class="pricePerfume">₹4,700.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/men2.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Versace Eros pour Homme EDT for Men 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹6,150.00</del></span>
+                    <span class="pricePerfume">₹6,100.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/men3.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText">Boss EDT for Men 30ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹3,600.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/men4.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Gucci Guilty Cologne EDT Pour Homme 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹5,400.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/men5.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Acqua Di Gio Profumo Parfum for Men 75ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹6,850.00</del></span>
+                    <span class="pricePerfume">₹6,600.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/men6.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Ralph Lauren Polo red EDT for Men 75ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹4,600.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/men7.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Davidoff Cool Water Wave EDT for Men 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹5,100.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/men8.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText">Coach EDT for Men 40ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹3,550.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/men9.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Gucci Guilty EDT for Men 90ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹9,000.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/men10.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Paco Rabanne Invictus EDT for Men 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹4,600.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Women perfume lists -->
+    <h2 class="featurette-heading fw-normal lh-1 widthModifier2" id="forWomen1">
+      <br />
+      <br />
+      Women's Perfume Catagory
+    </h2>
+    <div class="album py-5 bg-light" id="forWomen2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/perfume2.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"> N°5 Chanel EDP 75ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹10,850.00</del></span>
+                    <span class="pricePerfume">₹10,600.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women1.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText">Coach Floral Blush EDP 50ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹5,600.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women2.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Dolce & Gabbana Dolce EDP 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹6,250.00</del></span>
+                    <span class="pricePerfume">₹6,200.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/women3.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Dolce & Gabbana The One EDP 30ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹4,450.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women4.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText">Coach Woman EDP 50ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹5,850.00</del></span>
+                    <span class="pricePerfume">₹5,600.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women5.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Boss The Scent For Her EDP 30ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹4,000.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/women6.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText">Jimmy Choo Fever EDP 30ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹6,150.00</del></span>
+                    <span class="pricePerfume">₹6,000.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women7.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Versace Bright Crystal EDT 90ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹8,100.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women8.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Carolina Herrera Good Girl EDP Supreme 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹8,050.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <a
+              href="https://www.dior.com/en_int/beauty/products/Y0998004-sauvage-parfum-parfum-citrus-and-woody-notes-refillable"
+              target="_blank"
+              ><div class="box card">
+                <img src="img/women9.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Paco Rabanne Olympea Legend EDP 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹5,300.00</span>
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <a
+            href="https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women10.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText">Armani Si Passione EDP 50ML</span>
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span><del>₹6,450.00</del></span>
+                    <span class="pricePerfume">₹6,400.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://www.armani.com/en-us/eau-de-toilette-acqua-di-gio-50-ml_cod43769801095560078.html"
+            target="_blank"
+            ><div class="col">
+              <div class="box card">
+                <img src="img/women11.png" alt="" />
+
+                <div class="card-body">
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="perfumeText"
+                      >Versace Dylan Blue Pour Femme EDP 50ML</span
+                    >
+                  </p>
+                  <p class="card-text widthModifier2 perfumeFont">⭐⭐⭐⭐⭐</p>
+                  <p class="card-text widthModifier2 perfumeFont">
+                    <span class="pricePerfume">₹7,300.00</span>
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- 7th Footer -->
+    <div class="footerTest">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>QUICK MENU</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">About Us</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Our Blogs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Rewards Program</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Track Your Order</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Order Cancellations</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <h5>CATEGORIES</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Perfumes</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Gift Sets</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Fragrance Mists</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Deodrants</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Deodrant Stick</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>LEGAL AREA</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Terms and Conditions</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Privacy Policy</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Cookie Policy</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Cookie settings</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Return Policy</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Shipping Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1">
+              <form>
+                <h5><strong>SUBSCRIBE TO OUR NEWSLETTER</strong></h5>
+                <p>
+                  Subscribe to get special offers, free giveaways, and
+                  once-in-a-lifetime deals.
+                </p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control rad0"
+                    placeholder="Email address"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark center2 rad0"
+                  >
+                    <strong>Subscribe</strong>
+                  </button>
+                </div>
+              </form>
+              <br />
+              <div>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img src="img/footericon1.png" alt="" class="box2 mx-1"
+                /></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img src="img/footericon2.png" alt="" class="box2 mx-1"
+                /></a>
+                <a href="https://twitter.com/" target="_blank"
+                  ><img src="img/footericon3.png" alt="" class="box2 mx-1"
+                /></a>
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><img src="img/footericon4.png" alt="" class="box2 mx-1"
+                /></a>
+                <a href="https://in.linkedin.com/" target="_blank"
+                  ><img src="img/footericon5.png" alt="" class="box2 mx-1"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p>
+              © 2022 Company, Inc. All rights reserved.All transactions on
+              AromasenSe are secured by SSL and protected via multiple payment
+              gateways.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script1.js"></script>
+  </body>
+</html>
